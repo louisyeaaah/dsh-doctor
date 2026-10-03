@@ -1,0 +1,49 @@
+{
+  "name": "dsh-doctor",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Read-only diagnostics for DSH: why a plugin row is not running, why a skill is invisible, whether patch rows conflict, and why an edited plugin did not take effect — plus a redacted card you can paste into an issue.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": ">=0.2.0-rc.1 <0.3.0-0",
+    "@deepseek-ai/dsh-commands": ">=0.2.0-rc.1 <0.3.0-0",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "manifestVersion": 1
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "diagnostics",
+    "doctor",
+    "troubleshooting"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/louisyeaaah/dsh-doctor.git"
+  },
+  "license": "MIT",
+  "scripts": {
+    "verify": "bash scripts/verify.sh",
+    "test": "node scripts/selftest.mjs"
+  }
+}

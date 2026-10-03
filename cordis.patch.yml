@@ -1,0 +1,10 @@
+# dsh-doctor bundle patch
+#
+# 只注册一行：把 dsh_doctor 工具和 /dsh-doctor 命令挂进 DSH。
+# 这个插件是**只读**的：不写配置、不改 patch、不动任何插件行。
+- insert:
+    - id: tool-doctor
+      name: 'dsh-doctor'
+      config:
+        # 体检卡里默认脱敏（用户名、绝对路径、疑似 token）。要看原文就设成 false。
+        redact: true
