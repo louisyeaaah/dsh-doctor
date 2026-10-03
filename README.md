@@ -101,3 +101,8 @@ patch      <HOME>/.dsh/profiles/desktop/cordis.patch.yml
 | `lib/render.js` | 脱敏、结论提炼、文本报告与 markdown 卡片 |
 | `scripts/selftest.mjs` | 15 项纯逻辑自检（脱敏 / 结论 / 渲染） |
 | `scripts/verify.sh` | 静态自检（语法 + manifest + patch + 单测） |
+
+---
+
+作者 [@louisyeaah](https://x.com/louisyeaah)（悉尼）—— 发了什么、翻车了什么都会写。
+作品站：[louisyeaaah.github.io](https://louisyeaaah.github.io) · 全部工具：[github.com/louisyeaaah](https://github.com/louisyeaaah)
